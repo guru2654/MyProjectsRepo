@@ -61,6 +61,8 @@ export const sendMessage = async(req, res)=>{
 
         //Todo:Real Time functionality goes here
 
+        res.status(201).json(newMessage)
+
         
     } catch (error) {
         console.error("Error in sendMessage: ", error.message);
